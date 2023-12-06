@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4GQFfmq6dNi2b2mz/G5iZfLFZs6SAP3i9zv1MaMxvNqz2kTTZRWJCgbNTfWPiXyV6r8GAB1LKeL3Sg/vhv/DQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    body{
+    /* background-color: rgb(7, 7, 14); */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image:url(back.png.png);
+    background-blend-mode: multiply;
+    margin: 0;
+}
+    nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(10, 10, 19);
+    cursor: pointer;
+    top: 0;
+    position: fixed; /* Set position to fixed */
+    width: 100%; /* Make the navbar full width */
+    z-index: 1000;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Add a transition effect for color change */
+}
+
+nav ul li a:hover {
+    color: brown;
+    font-size: 1.05rem;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 23px;
+}
+.left{
+    margin-left: 10%;
+    font-size: 130%;
+    color: white;
+    text-shadow: 0 0 20px white;
+    animation: fadeInUp 1s ease-in-out;
+        -webkit-animation: fadeInUp 1s ease-in-out; /* For Safari and Chrome */
+        -moz-animation: fadeInUp 1s ease-in-out; /* For Firefox */
+        -o-animation: fadeInUp 1s ease-in-out; /* For Opera */
+    
+}
+.right {
+    margin-left: auto; /* This will push it to the right */
+}
+
+.contact-box {
+    
+    box-shadow:0 0 20px white;/* Add a subtle box shadow */
+    text-align: center;
+    padding: 80px;
+    margin: 150px auto; /* Adjust the margin to center the box vertically */
+    border-radius: 10px;
+   
+    
+    /* Set the width and height to make it square */
+    width: 300px;
+    height: 300px;
+    animation: fadeIn 1s ease-out forwards;
+  
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px); /* Optional: Add a slight upward movement */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.contact-box h2 {
+    color: white
+}
+
+.contact-box p {
+    color: white
+}
+
+.contact-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #266a98;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #172630;
+}
+.contact-box:hover{
+    box-shadow:0 0 20px  #2980b9;
+
+}
+@media screen and (max-width: 768px) {
+    nav {
+        height: 100%; /* Use 100% height to cover the entire vertical space */
+        flex-direction: column;
+        justify-content: flex-start; /* Align items to the start vertically */
+        text-align: left;
+        /* padding: 10px; */
+        position: fixed;
+        top: 0;
+        left: 0; /* Position the navbar on the left side */
+        width: 100px; /* Set a specific width for the small navbar */
+        background-color: rgb(10, 10, 19);
+        z-index: 1000;
+      
+      
+    }
+    nav a {
+        font-size: 5px; /* Adjust the font size for navigation links */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    nav ul li a{
+        font-size: x-small;
+        margin-top: 0;
+    }
+    nav ul li a:hover {
+    color: brown;
+    }
+
+    nav li {
+        margin: 10px 0;
+        font-size: x-small;
+        
+    }
+
+    .left {
+        margin-left: 4px;
+        font-size: x-small;
+    }
+
+    .right {
+        margin-right: 10px;
+       
+    }
+    .contact-box{
+        width: 100px;
+        height: 290px;
+        margin-left: 150px;
+    }
+    .contact-button {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 20px;
+    background-color: #266a98;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Meghna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <section class="contact-box">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or inquiries, feel free to reach out:</p>
+        <a href="mailto:meghnalekhwal632@gmail.com" class="contact-button">Email Me</a>
+    </section>
+</body>
+</html>

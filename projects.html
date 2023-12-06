@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4GQFfmq6dNi2b2mz/G5iZfLFZs6SAP3i9zv1MaMxvNqz2kTTZRWJCgbNTfWPiXyV6r8GAB1LKeL3Sg/vhv/DQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    body{
+    /* background-color: rgb(7, 7, 14); */
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    background-image:url(back.png.png);
+    background-blend-mode: multiply;
+    margin: 0;
+}
+    nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(10, 10, 19);
+    cursor: pointer;
+    top: 0;
+    position: fixed; /* Set position to fixed */
+    width: 100%; /* Make the navbar full width */
+    z-index: 1000;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Add a transition effect for color change */
+}
+
+nav ul li a:hover {
+    color: brown;
+    font-size: 1.05rem;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 23px;
+}
+.left{
+    margin-left: 10%;
+    font-size: 130%;
+    color: white;
+    text-shadow: 0 0 20px white;
+    animation: fadeInUp 1s ease-in-out;
+        -webkit-animation: fadeInUp 1s ease-in-out; /* For Safari and Chrome */
+        -moz-animation: fadeInUp 1s ease-in-out; /* For Firefox */
+        -o-animation: fadeInUp 1s ease-in-out; /* For Opera */
+    
+}
+.right {
+    margin-left: auto; /* This will push it to the right */
+}
+.projects {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            /* background-color: #fff; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+            border-radius: 8px;
+            margin-top: 7%;
+            
+        }
+        .projects ul {
+    list-style: none;
+    padding: 0; /* Remove default padding for the list */
+}
+
+
+        .project-item {
+    display: none;
+    text-align: center;
+    
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    transition: box-shadow 0.3s ease; /* Transition effect for the glow */
+    box-shadow: 0 0 20px rgba(0, 128, 255, 0.8);
+}
+
+.project-item:hover {
+    box-shadow: 0 0 20px white; /* Glow effect on hover */
+}
+
+        .project-item.active {
+            display: block;
+          
+        }
+
+        h2 {
+            color: rgb(188, 109, 109);
+        }
+
+        p {
+            color: white;
+        }
+
+        .project-navigation {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+            
+        }
+        .project-nav-button {
+    background-color: #09223c;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s; /* Add transition effects for background color and text color */
+}
+
+.project-nav-button:hover {
+    background-color: #fff;
+    color: #09223c;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        height: 100%; /* Use 100% height to cover the entire vertical space */
+        flex-direction: column;
+        justify-content: flex-start; /* Align items to the start vertically */
+        text-align: left;
+        /* padding: 10px; */
+        position: fixed;
+        top: 0;
+        left: 0; /* Position the navbar on the left side */
+        width: 100px; /* Set a specific width for the small navbar */
+        background-color: rgb(10, 10, 19);
+        z-index: 1000;
+      
+      
+    }
+    nav a {
+        font-size: 5px; /* Adjust the font size for navigation links */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    nav ul li a{
+        font-size: x-small;
+        margin-top: 0;
+    }
+
+    nav li {
+        margin: 10px 0;
+        font-size: x-small;
+        
+    }
+
+    .left {
+        margin-left: 4px;
+        font-size: x-small;
+    }
+
+    .right {
+        margin-right: 10px;
+       
+    }
+
+    .projects {
+        margin-left: 80px; /* Adjust margin-left to make space for the fixed navbar */
+        margin-top: 10px;
+    }
+
+    .project-item {
+        padding: 10px;
+    }
+
+    .project-navigation {
+        flex-direction: column;
+    }
+
+    .project-nav-button {
+        margin-top: 10px;
+    }
+}
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Meghna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+        <section class="projects">
+            <div class="project-item active">
+                <h2>Netflix Clone - Landing Page</h2>
+                <p>
+                    <strong>Description:</strong>
+                    The Netflix Clone Landing Page project involves the creation of a replica of the Netflix landing page using React.js. By leveraging React.js, I've likely implemented dynamic components and a responsive layout to mimic the visual aesthetics of the original Netflix page.
+                </p>
+                <p>
+                    <strong>Technologies Used:</strong>
+                    <ul>
+                        <li>React.js</li>
+                        <li>HTML</li>
+                        <li>CSS (including the integration of external stylesheets for fonts and icons)</li>
+                        <li>Font Awesome for icons</li>
+                    </ul>
+                </p>
+            </div>
+    
+            <div class="project-item" >
+                <h2>Movie Recommendation System</h2>
+                <p>
+                     <strong>Description:</strong>
+                    A movie recommendation system using basic machine learning algorithms focuses on simplicity and ease of implementation. While not as complex as advanced models, it still provides personalized recommendations based on user preferences, making it suitable for smaller-scale applications or as an introductory project to machine learning-based recommendation systems.
+                </p>
+                <p>
+                <strong>Technologies Used:</strong>
+       <ul>
+<li>Programming Language: Python </li>
+<li>Libraries: Scikit-learn NumPy Pandas.</li>
+</ul>         
+</p>
+            </div>
+    
+            <div class="project-item">
+                <h2>Desktop Voice Assistant</h2>
+                <p>
+                    <strong>Description:</strong>
+                    a software application designed to interact with users through spoken language, enabling hands-free control of a computer or performing various tasks like Speech Recognition, Command Execution and User Interaction it analyzes and interprets the meaning behind the user's spoken words.
+                </p>
+                <p>
+                    <strong>Technologies Used:</strong>
+                    <ul>
+                        <li>Programming Language: Python</li>
+                        <li>Libraries: SpeechRecognition, pyttsx3, smtplib, webbrowser and more</li>
+                    </ul>
+                </p>
+            </div>
+        </section>
+    
+        <!-- Button to navigate between projects -->
+        <div class="project-navigation">
+            <button onclick="showProject(currentIndex - 1)" class="project-nav-button previous">&#9664; Previous</button>
+            <button onclick="showProject(currentIndex + 1)" class="project-nav-button next">Next &#9654;</button>
+        </div>
+    
+        <!-- Your remaining HTML content here -->
+    
+        <script>
+            let currentIndex = 0;
+        
+            function showProject(index) {
+                // Hide all projects
+                document.querySelectorAll('.project-item').forEach(item => {
+                    item.classList.remove('active');
+                });
+        
+                // Show the selected project
+                document.querySelector(`.project-item:nth-child(${index + 1})`).classList.add('active');
+                currentIndex = index;
+                updateNavigationButtons();
+            }
+        
+            function updateNavigationButtons() {
+                const totalProjects = document.querySelectorAll('.project-item').length;
+        
+                // Disable or enable Previous button based on the current index
+                document.querySelector('.project-nav-button.previous').disabled = currentIndex === 0;
+        
+                // Disable or enable Next button based on the current index
+                document.querySelector('.project-nav-button.next').disabled = currentIndex === totalProjects - 1;
+            }
+        </script>
+    </body>
+    </html>
+    </header>
+</body>
+</html>

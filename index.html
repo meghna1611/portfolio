@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-4GQFfmq6dNi2b2mz/G5iZfLFZs6SAP3i9zv1MaMxvNqz2kTTZRWJCgbNTfWPiXyV6r8GAB1LKeL3Sg/vhv/DQg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+body{
+    background-color: rgb(7, 7, 14);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 85px;
+    background-color: rgb(10, 10, 19);
+    cursor: pointer;
+    top: 0;
+    position: fixed; /* Set position to fixed */
+    width: 100%; /* Make the navbar full width */
+    z-index: 1000;
+    font-weight: bolder;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+
+    
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease; /* Add a transition effect for color change */
+}
+
+nav ul li a:hover {
+    color: brown;
+    font-size: 1.05rem;
+}
+
+nav li{
+    list-style: none;
+    margin: 0 23px;
+}
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.left{
+    margin-left: 10%;
+    font-size: 130%;
+    text-shadow: 0 0 20px white;
+    animation: fadeInUp 1s ease-in-out;
+        -webkit-animation: fadeInUp 1s ease-in-out; /* For Safari and Chrome */
+        -moz-animation: fadeInUp 1s ease-in-out; /* For Firefox */
+        -o-animation: fadeInUp 1s ease-in-out; /* For Opera */
+    
+}
+.first{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 80px 0;
+
+}
+.first div{
+    margin-top: 5%;
+width: 30%;
+
+}
+.lefts{
+    
+      
+ font-size: 1.5rem;
+
+}
+.right {
+    margin-left: auto; /* This will push it to the right */
+}
+.rights img{
+width: 80%;
+
+}
+#element{
+    color: brown;
+}
+.second{
+    margin: auto;
+    max-width: 80vw;
+}
+footer{
+    background-color: rgb(10, 10, 19);
+    background-blend-mode: soft-light;
+   
+}
+.footer {
+    display: flex;
+    flex-direction: column; /* Change to column layout */
+    align-items: center; /* Center items horizontally */
+    padding: 50px 250px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+.social-icon {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    color: brown /* Change color on hover if desired */
+}
+
+.footer .foot-right {
+    text-align: center;
+    padding: 12px 0;
+}
+@media screen and (max-width: 768px) {
+    nav {
+        height: 100%; /* Use 100% height to cover the entire vertical space */
+        flex-direction: column;
+        justify-content: flex-start; /* Align items to the start vertically */
+        text-align: left;
+        /* padding: 10px; */
+        position: fixed;
+        top: 0;
+        left: 0; /* Position the navbar on the left side */
+        width: 100px; /* Set a specific width for the small navbar */
+        background-color: rgb(10, 10, 19);
+        z-index: 1000;
+      
+      
+    }
+    nav a {
+        font-size: 5px; /* Adjust the font size for navigation links */
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        
+    }
+    nav ul li a{
+        font-size: x-small;
+        margin-top: 0;
+    }
+    nav ul li a:hover {
+    color: brown;
+    }
+
+    nav li {
+        margin: 10px 0;
+        font-size: x-small;
+        
+    }
+
+    .left {
+        margin-left: 4px;
+        font-size: x-small;
+    }
+
+    .right {
+        margin-right: 10px;
+       
+    }
+    main{
+        margin-left: 120px;
+        font-size: 0.2rem;
+    }
+
+
+}
+
+
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">Meghna's Portfolio</div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="lefts">
+                Hello, My name is <span style="color: brown;">Meghna Lekhwal</span><br>
+                Passionate about driving innovation and embracing challenges. I am actively seeking job opportunities in the dynamic fields of <span id="element"></span>
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1h-rKPtcXA7Hyg-1FXLPA2gIDg8wqXTYy/view?usp=sharing" download class="btn btn-resume">
+                        Download <br> Resume
+                    </a>
+                    <a href="https://github.com/meghna1611" download class="btn btn-github">Github</a>
+                </div>
+            </div>
+            <div class="rights">
+                <img src="dev.png.png" alt="">
+            </div>
+        </section>
+      
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="social-icons">
+                <!-- Add Font Awesome icons for Instagram, LinkedIn, and GitHub -->
+                
+                <a href="https://www.instagram.com/your_instagram" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/meghna-lekhwal-23a575200/" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+             <a href="https://github.com/meghna1611" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            </div>
+        <div class="foot-right">
+            &#169;www.meghnasportfolio.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['software development', 'web development','data analysis'],
+          typeSpeed: 50,
+        });
+      </script>
+    
+</body>
+</html>

@@ -1,0 +1,41 @@
+.buttons {
+    display: flex;
+}
+
+.buttons .btn {
+    padding: 10px 20px;
+    border: none;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 0 10px brown;
+}
+.buttons .btn:hover {
+    background-color: #29629F; /* Darker blue on hover */
+}
+
+/* GitHub and Resume Button Styles */
+.buttons .btn-github,
+.buttons .btn-resume {
+    padding: 8px 20px; /* Adjust padding for a more comfortable size */
+    font-size: 12px; /* Adjust font size */
+    
+    background-color: brown;
+    color: white; /* White text color */
+    margin-right: 10px; /* Add margin between the buttons */
+    border: 2px solid brown; /* Add a border for a cleaner look */
+    border-radius: 5px; /* Add border-radius for rounded corners */
+    text-decoration: none; /* Remove underlines */
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; /* Add transition for smoother hover effect */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn-github:hover,
+.buttons .btn-resume:hover {
+    background-color: #1c1f23; /* Darker GitHub color on hover */
+    color: #fff; /* Change text color on hover */
+    border-color: #1c1f23; /* Darker border color on hover */
+}
+
